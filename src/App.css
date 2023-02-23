@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Inter', sans-serif; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  background: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav--icon{
+  height: 24px;
+  width: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav--text{
+  font-weight: 500;
+  font-size: 15px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left:7px ;
+  margin-top: 2px;
+  line-height: 18px;
+}
+
+.CardViewer--component{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Card{
+  display: flex;
+  max-width: 700px;
+  padding: 40px 0px;
+  border-bottom: 1px  #F5F5F5 solid;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card--img{
+  width: 125px;
+  height: 170px;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.location-pin{
+  width: 10px;
+  margin-top:10px;
+}
+
+.location-text{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.location-name{
+  color: 2B283A;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.location-link,.location-link:visited{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #918E9B;
+  margin-left: 12px;
+  line-height: 13px;
+}
+
+.Card--info{
+  margin-left: 20px;
+}
+
+.Card--info--title{
+font-weight: 700;
+font-size: 25px;
+line-height: 30px;
+color:#2B283A;
+}
+
+.Card--info--Date{
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  color: #2B283A;
+}
+
+.Card--info--Description{
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #2B283A;
 }
